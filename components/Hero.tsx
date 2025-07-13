@@ -30,7 +30,7 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <div className="mb-6">
-              <p className="text-blue-600 dark:text-blue-400 font-medium mb-2">Hello, I&pos;m</p>
+              <p className="text-blue-600 dark:text-blue-400 font-medium mb-2">Hello, I&apos;m</p>
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
                 Abhishek Mahajan
               </h1>

@@ -49,7 +49,7 @@ export default function Skills() {
             Skills & Expertise
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Here&pos;s an overview of my technical skills across various 
+            Here&apos;s an overview of my technical skills across various 
             technologies and tools I work with.
           </p>
         </div>
