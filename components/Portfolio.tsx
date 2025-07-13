@@ -10,9 +10,9 @@ export default function Portfolio() {
     {
       id: 1,
       title: 'AI Email Replier',
-      description: 'An intelligent email response system that uses machine learning to generate contextual replies, saving time and improving communication efficiency.',
+      description: 'Built a Chrome extension using Java Spring Boot and Gemini API to automate email replies, improving efficiency and response time by up to 40%.',
       image: 'https://readdy.ai/api/search-image?query=Modern%20AI%20email%20interface%20with%20clean%20design%2C%20showing%20automated%20email%20responses%2C%20artificial%20intelligence%20icons%2C%20blue%20and%20white%20color%20scheme%2C%20professional%20software%20interface%2C%20machine%20learning%20visualization&width=600&height=400&seq=ai-email&orientation=landscape',
-      tech: ['Python', 'Machine Learning', 'NLP', 'Flask'],
+      tech: ['Java', 'Spring Boot', 'Google Gemini API Key'],
       category: 'ai',
       github: 'https://github.com/Venom0011/AI-Email-Writer',
       demo: null
@@ -20,7 +20,7 @@ export default function Portfolio() {
     {
       id: 2,
       title: 'OLX Clone',
-      description: 'A comprehensive marketplace application with user authentication, product listings, search functionality, and real-time messaging between buyers and sellers.',
+      description: 'Developed a secure full-stack OLX clone with RESTful APIs, improving performance by 60% through caching, pagination, and reduced response time.',
       image: 'https://readdy.ai/api/search-image?query=Modern%20e-commerce%20marketplace%20interface%2C%20clean%20product%20listings%2C%20search%20functionality%2C%20user-friendly%20design%2C%20mobile%20responsive%20layout%2C%20orange%20and%20white%20color%20scheme%20similar%20to%20online%20marketplace%20platforms&width=600&height=400&seq=olx-clone&orientation=landscape',
       tech: ['Java', 'Spring Boot', 'Angular', 'MySQL'],
       category: 'fullstack',
@@ -30,7 +30,7 @@ export default function Portfolio() {
     {
       id: 3,
       title: 'PizzaOnClick',
-      description: 'An online pizza ordering system with customizable pizzas, real-time order tracking, payment integration, and admin dashboard for restaurant management.',
+      description: 'Built PizzaOnClick, a dynamic Java Spring Boot web app with real-time order management, reducing checkout time by 40% and improving user experience.',
       image: 'https://readdy.ai/api/search-image?query=Modern%20pizza%20ordering%20app%20interface%2C%20delicious%20pizza%20images%2C%20clean%20food%20delivery%20design%2C%20mobile-friendly%20layout%2C%20red%20and%20white%20color%20scheme%2C%20restaurant%20ordering%20system&width=600&height=400&seq=pizza-app&orientation=landscape',
       tech: ['React', 'Node.js', 'Express', 'MongoDB'],
       category: 'fullstack',

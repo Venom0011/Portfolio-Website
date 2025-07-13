@@ -1,6 +1,7 @@
 
 'use client';
 
+import { log } from 'console';
 import { useState } from 'react';
 
 export default function Contact() {
@@ -26,12 +27,13 @@ export default function Contact() {
 
     try {
       const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: new URLSearchParams(formData).toString()
-      });
+    method: 'POST',
+    headers: {
+    'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(formData),
+  });
+
 
       if (response.ok) {
         setSubmitStatus('Message sent successfully! I\'ll get back to you soon.');
@@ -40,6 +42,7 @@ export default function Contact() {
         setSubmitStatus('Failed to send message. Please try again.');
       }
     } catch (error) {
+      console.log('Error sending message:', error);
       setSubmitStatus('Failed to send message. Please try again.');
     }
 
