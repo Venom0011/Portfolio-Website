@@ -19,17 +19,17 @@ export default function About() {
           <div>
             <div className="prose prose-lg dark:prose-invert max-w-none">
               <p className="text-gray-700 dark:text-gray-300 mb-6">
-                I'm a dedicated Software Engineer with expertise in full-stack development using Java, 
+                I&pos;m a dedicated Software Engineer with expertise in full-stack development using Java, 
                 Spring Boot, SQL, and Angular. My passion lies in crafting efficient, scalable solutions 
                 that solve real-world problems.
               </p>
               <p className="text-gray-700 dark:text-gray-300 mb-6">
-                Currently, I'm expanding my knowledge in cutting-edge technologies including Microservices 
+                Currently, I&pos;m expanding my knowledge in cutting-edge technologies including Microservices 
                 architecture, Docker, Kubernetes, CI/CD pipelines, and Machine Learning. I believe in 
                 continuous learning and staying updated with the latest industry trends.
               </p>
               <p className="text-gray-700 dark:text-gray-300">
-                When I'm not coding, you can find me exploring new technologies, contributing to open-source 
+                When I&pos;m not coding, you can find me exploring new technologies, contributing to open-source 
                 projects, or sharing knowledge with the developer community.
               </p>
             </div>
@@ -68,7 +68,7 @@ export default function About() {
               <div>
                 <h4 className="font-medium text-gray-900 dark:text-white">Bachelor of Technology (B.Tech)</h4>
                 <p className="text-gray-600 dark:text-gray-400">Electronics and Telecommunication Engineering</p>
-                <p className="text-gray-500 dark:text-gray-500 text-sm">JSPM's Rajarshi Shahu College of Engineering</p>
+                <p className="text-gray-500 dark:text-gray-500 text-sm">JSPM&pos;s Rajarshi Shahu College of Engineering</p>
                 <p className="text-gray-500 dark:text-gray-500 text-sm">June 2019 – July 2023 • 80.1%</p>
               </div>
             </div>

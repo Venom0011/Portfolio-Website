@@ -1,8 +1,8 @@
 
 'use client';
 
-import { log } from 'console';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -14,14 +14,14 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState('');
 
-  const handleChange = (e) => {
+  const handleChange = (e:any) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e:any) => {
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -106,7 +106,7 @@ export default function Contact() {
             Get In Touch
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            I'm always open to discussing new opportunities, interesting projects, 
+            I&apos;m always open to discussing new opportunities, interesting projects, 
             or just having a chat about technology and innovation.
           </p>
         </div>
@@ -114,11 +114,11 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
             <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-              Let's Connect
+              Let&apos;s Connect
             </h3>
             <p className="text-gray-600 dark:text-gray-400 mb-8">
               Whether you have a question, want to collaborate on a project, or just want to say hello, 
-              I'd love to hear from you. Feel free to reach out through any of these channels.
+              I&pos;d love to hear from you. Feel free to reach out through any of these channels.
             </p>
 
             <div className="space-y-6 mb-8">
@@ -158,16 +158,22 @@ export default function Contact() {
                     title={social.label}
                   >
                     {social.icon === 'leetcode-custom' ? (
-                      <img 
-                        src="https://static.readdy.ai/image/dbcfefec4a3cfeb8cf71832156f1f84c/5871f48262e01f2325b178001adf5dba.png" 
-                        alt="LeetCode" 
+                      <Image
+                        src="https://static.readdy.ai/image/dbcfefec4a3cfeb8cf71832156f1f84c/5871f48262e01f2325b178001adf5dba.png"
+                        alt="LeetCode"
+                        width={24}
+                        height={24}
                         className="w-6 h-6"
+                        unoptimized
                       />
                     ) : social.icon === 'geeksforgeeks-custom' ? (
-                      <img 
-                        src="https://static.readdy.ai/image/dbcfefec4a3cfeb8cf71832156f1f84c/f76d1c13726133b6f2e4b426422e2bb4.png" 
-                        alt="GeeksforGeeks" 
+                      <Image
+                        src="https://static.readdy.ai/image/dbcfefec4a3cfeb8cf71832156f1f84c/f76d1c13726133b6f2e4b426422e2bb4.png"
+                        alt="GeeksforGeeks"
+                        width={24}
+                        height={24}
                         className="w-6 h-6"
+                        unoptimized
                       />
                     ) : (
                       <i className={`${social.icon} text-xl`}></i>

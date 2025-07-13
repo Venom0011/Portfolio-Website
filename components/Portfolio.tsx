@@ -2,6 +2,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Portfolio() {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -105,11 +106,15 @@ export default function Portfolio() {
               key={project.id}
               className="bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="aspect-video overflow-hidden">
-                <img
+              <div className="relative w-full h-56">
+                <Image
                   src={project.image}
                   alt={project.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
+                  style={{ objectFit: 'cover', objectPosition: 'top' }}
+                  priority={project.id === 1}
                 />
               </div>
               <div className="p-6">

@@ -1,6 +1,8 @@
 
 'use client';
 
+import Image from 'next/image';
+
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -9,12 +11,7 @@ export default function Hero() {
     }
   };
 
-  const downloadResume = () => {
-    const link = document.createElement('a');
-    link.href = '/resume.pdf';
-    link.download = 'Abhishek_Mahajan_Resume.pdf';
-    link.click();
-  };
+  // Removed unused downloadResume function to fix compile error.
 
   return (
     <section 
@@ -33,7 +30,7 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <div className="mb-6">
-              <p className="text-blue-600 dark:text-blue-400 font-medium mb-2">Hello, I'm</p>
+              <p className="text-blue-600 dark:text-blue-400 font-medium mb-2">Hello, I&pos;m</p>
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
                 Abhishek Mahajan
               </h1>
@@ -83,9 +80,11 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer"
               >
-                <img 
-                  src="https://static.readdy.ai/image/dbcfefec4a3cfeb8cf71832156f1f84c/5871f48262e01f2325b178001adf5dba.png" 
-                  alt="LeetCode" 
+                <Image
+                  src="https://static.readdy.ai/image/dbcfefec4a3cfeb8cf71832156f1f84c/5871f48262e01f2325b178001adf5dba.png"
+                  alt="LeetCode"
+                  width={20}
+                  height={20}
                   className="w-5 h-5"
                 />
               </a>
@@ -95,9 +94,11 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer"
               >
-                <img 
-                  src="https://static.readdy.ai/image/dbcfefec4a3cfeb8cf71832156f1f84c/f76d1c13726133b6f2e4b426422e2bb4.png" 
-                  alt="GeeksforGeeks" 
+                <Image
+                  src="https://static.readdy.ai/image/dbcfefec4a3cfeb8cf71832156f1f84c/f76d1c13726133b6f2e4b426422e2bb4.png"
+                  alt="GeeksforGeeks"
+                  width={20}
+                  height={20}
                   className="w-5 h-5"
                 />
               </a>
@@ -107,10 +108,13 @@ export default function Hero() {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <div className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white dark:border-gray-700 shadow-2xl">
-                <img
+                <Image
                   src="https://static.readdy.ai/image/dbcfefec4a3cfeb8cf71832156f1f84c/ba12912f86dd1a25675a2a02e10522be.jfif"
                   alt="Abhishek Mahajan"
+                  width={384}
+                  height={384}
                   className="w-full h-full object-cover object-top"
+                  priority
                 />
               </div>
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-100 dark:bg-blue-900 rounded-full opacity-70"></div>
